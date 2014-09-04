@@ -9,3 +9,8 @@
 ##Week 01
 - The Internet and the Web
 - Web Basics
+
+##Week 02
+- Web Ethics
+- HTML Anatomy
+- HTML Best Practices
