@@ -14,3 +14,7 @@
 - Web Ethics
 - HTML Anatomy
 - HTML Best Practices
+
+##Week 03
+- [HTML Tags](https://github.com/thegeekprof/web-page-sample)
+- [HTML Structure](https://github.com/thegeekprof/html-structure)
