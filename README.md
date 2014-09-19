@@ -18,3 +18,8 @@
 ##Week 03
 - [HTML Tags](https://github.com/thegeekprof/web-page-sample)
 - [HTML Structure](https://github.com/thegeekprof/html-structure)
+
+##Week 04
+- Web Graphics
+- [Site Architecture](https://github.com/thegeekprof/site-architecture) & Linking
+- Project: [HTML Structure](https://github.com/thegeekprof/project-structure)

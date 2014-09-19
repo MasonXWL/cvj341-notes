@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Web Graphics</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Web Graphics</h1>
+    </header>
+
+      <main>
+
+      <section>
+        <h2>Types of graphics</h2>
+
+        <article>
+          <h3>Raster</h3>
+
+          <ul>
+            <li>a grid of pixels</li>
+            <li>cannot scale up</li>
+            <li>edited using Photoshop</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Vector</h3>
+
+          <ul>
+            <li>points, lines, curves, shapes</li>
+            <li>can be scaled up</li>
+            <li>edited using Illustrator</li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <h2>Compression</h2>
+
+        <article>
+          <ul>
+            <li>allows for smaller file sizes</li>
+            <li>necessary for images, multimedia</li>
+            <li>data encoding disregards some information</li>
+            <li>compression &raquo; loss of quality &raquo; smaller file size</li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <h2>Lossy vs. lossless compression</h2>
+
+        <article>
+          <h3>Lossy</h3>
+          <ul>
+            <li>file loses data in compression</li>
+            <li>smaller file sizes, but quality is degraded</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Lossless</h3>
+          <ul>
+            <li>file does not lose data in compression</li>
+            <li>massive file sizes, but quality is retained</li>
+          </ul>
+        </article>
+
+      </section>
+
+      <section>
+        <h2>Web graphic formats</h2>
+
+        <article>
+          <h3>GIF: Graphics Interchange Format (<kbd>.gif</kbd>)</h3>
+          <ul>
+            <li>limited to a palette of 256 colors</li>
+            <li>good for low-color graphics such as logos</li>
+            <li>small animations</li>
+            <li>transparency</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>PNG: Portable Network Graphics (<kbd>.png</kbd>)</h3>
+          <ul>
+            <li>a replacement for GIFs (PNG-8)</li>
+            <li>large color palette (PNG-24)</li>
+            <li>transparency</li>
+            <li>smoother (anti-aliased) graphics</li>
+            <li>no animation capabilities</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>JPEG: Joint Photographic Experts Group (<kbd>.jpg</kbd> or <kbd>.jpeg</kbd>)</h3>
+          <ul>
+            <li>millions (billions?) of colors</li>
+            <li>used for photographic images</li>
+            <li>compression may leave 'artifacts'</li>
+            <li>progressive display reveals a portion of the image over time</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>SVG: Scalable Vector Graphics (<kbd>.svg</kbd>)</h3>
+          <ul>
+            <li>vector format for the web</li>
+            <li>behaviors described in XML</li>
+            <li>supported in all major browsers since 2011</li>
+            <li>...but not yet fully adopted</li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <h2>Web graphics toolkit</h2>
+
+        <article>
+          <h3>Adobe Photoshop</h3>
+          <ul>
+            <li>used to edit raster images</li>
+            <li>File &raquo; Save for Web</li>
+            <li>allows you to save in raster formats (<kbd>.gif</kbd>, <kbd>.jpg</kbd>, <kbd>.png</kbd>)</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Adobe Illustrator</h3>
+          <ul>
+            <li>used to edit vector images</li>
+            <li>File &raquo; Save for Web
+              <ul>
+                <li>allows you to save in raster formats (<kbd>.gif</kbd>, <kbd>.jpg</kbd>, <kbd>.png</kbd>)</li>
+              </ul>
+            </li>
+            <li>File &raquo; Save As...
+              <ul>
+                <li>allows you to save in vector format (<kbd>.svg</kbd>)</li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <h2>Preparing web graphics</h2>
+
+        <article>
+          <ul>
+            <li>always retain the original image</li>
+            <li>utilize Photoshop layers
+              <ul>
+                <li>Layer &raquo; Duplicate Layer</li>
+              </ul>
+            </li>
+            <li>save all work as a .pdf (Photoshop) or .ai (Illustrator)</li>
+            <li>export to appropriate web format
+              <ul>
+                <li>once an image is compressed, data is lost</li>
+              </ul>
+            </li>
+            <li>work in RGB color mode
+              <ul>
+                <li>CMYK color mode is for print</li>
+              </ul>
+            </li>
+            <li>raster images for web should be 72 dpi*
+              <ul>
+                <li>Image &raquo; Image Size...</li>
+                <li>print requires 300 dpi images</li>
+                <li>* may require modification for retina displays</li>
+              </ul>
+            </li>
+            <li>never re-size images by increasing height, width</li>
+            <li>do not distort images with unbalanced proportions
+              <ul>
+                <li>automatically taken care of in Photoshop</li>
+                <li>make sure "constrain proportion" icon is selected</li>
+              </ul>
+            </li>
+            <li>photos should <em>always</em> be saved as <kbd>.jpg</kbd></li>
+            <li>graphics should <em>always</em> be saved as <kbd>.gif</kbd> or <kbd>.png</kbd>
+              <ul>
+                <li><kbd>.png</kbd> is the preferred format</li>
+              </ul>
+            </li>
+            <li>consider size vs. quality when saving
+              <ul>
+                <li>Does your design focus on strong imagery?</li>
+                <li>What considerations are you making for mobile?</li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <h2>Practice</h2>
+
+        <article>
+          <p>Included in the web-graphics repo is an <code>img</code> directory containing two high-resolution images. Download these and experiment with different settings in the <em>Save for Web</em> panel of Photoshop. See how adjusting the file format and quality impacts the image, as well as the file size.</p>
+
+          <p>Determining the right file size vs. quality is often a judgement call. Find what you believe is a fair balance.</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
