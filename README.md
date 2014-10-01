@@ -25,3 +25,7 @@
 - Project: [HTML Structure](https://github.com/thegeekprof/project-structure)
 
 ##Week 05
+- Document Object Model
+- CSS Basics
+- CSS Anatomy
+- CSS Selectors
