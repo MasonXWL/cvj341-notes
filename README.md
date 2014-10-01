@@ -29,3 +29,6 @@
 - CSS Basics
 - CSS Anatomy
 - CSS Selectors
+
+##Week 06
+- Pair Programming
