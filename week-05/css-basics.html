@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Basics</title>
+  </head>
+
+  <body>
+
+    <header>
+      <h1>CSS Basics</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>What is CSS?</h2>
+
+        <ul>
+          <li>Cascading Style Sheets</li>
+          <li>Describe how an HTML document should be presented</li>
+          <li>Predominantly visual
+            <ul>
+              <li>colors, fonts, layout, animation, etc.</li>
+            </ul>
+          </li>
+          <li>We can specify aural styles
+            <ul>
+              <li>volume, pauses, cues, etc.</li>
+            </ul>
+          </li>
+          <li>And Braille, too!</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>CSS History</h2>
+
+        <ul>
+          <li>Developed by H&aring;kon Wium Lee and Bert Bos in 1994</li>
+          <li>Improved upon the capabilities of the HTML 1.0 and the visually minded Mosaic</li>
+          <li>CSS1 adopted by Netscape, Internet Explorer in 1996</li>
+          <li>CSS2 introduced in 1998
+            <ul>
+              <li>But it was <em>very</em> buggy, so W3C created a working draft of CSS2.1 in 2005</li>
+            </ul>
+          </li>
+          <li>Today: CSS3, a work in progress</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Why Cascading?</h2>
+
+        <ul>
+          <li>Styles applied to a parent element are, by default, inherited by child elements</li>
+          <li>But there's a hierarchy as to which rules take hold:
+            <ul>
+              <li>The last rule always wins out</li>
+              <li>A more specific rule will trump a less specific one</li>
+              <li><code>!important</code> override</li>
+            </ul>
+          </li>
+        </ul>
+
+      </section>
+
+      <section>
+        <h2>Ways to use CSS</h2>
+
+
+        <h3>Inline Styles</h3>
+
+        <p>We can use the <code>style</code> attribute inside elements:</p>
+
+        <p><code>&lt;p style="color: red;"&gt;</code>This is red text.<code>&lt;/p&gt;</code></p>
+
+        <p><strong>DO NOT DO THIS. BAD! BAD! BAD!</strong></p>
+
+
+        <h3>Internal Styles</h3>
+
+        <p>We can include a <code>&lt;style&gt;</code> tag inside the head of each HTML document.</p>
+
+        <pre><code>&lt;style&gt;<br/>&nbsp;&nbsp;p { color: red; }<br/>&lt;style&gt;</code></pre>
+
+        <p>Not so bad, but not very good either.</p>
+
+
+        <h3>External Style Sheets</h3>
+
+        <p>We can create a <code>.css</code> document which we can link to in our HTML document.</p>
+
+        <p><code>&lt;link href="css/style.css" rel="stylesheet" /&gt;</code></p>
+
+        <p>You may see the attribute/value of <code>type="text/css"</code> in some HTML documents. This is optional. Browsers defer to CSS as the default stylesheet language.</p>
+
+        <p>No tags are used in a <code>.css</code> document, just CSS blocks.</p>
+      </section>
+
+      <section>
+        <h2>Why are external stylesheets preferred?</h2>
+
+        <p>You maintain a web site of 100,000 pages. You decide to include:</p>
+
+        <ul>
+          <li>HTML presentational elements such as <code>&lt;b&gt;</code> or <code>&lt;hr/&gt;</code></li>
+          <li>Inline or internal styles which set your paragraphs in Helvetica and green.</li>
+        </ul>
+
+        <p><q>I hate Helvetica! I hate green!</q> <strong>&mdash; your boss <kbd>&gt;:(</kbd></strong></p>
+
+        <p>You: <kbd>:'-(</kbd></p>
+
+        <p>You now have to search through 100,000 pages to find these elements or styles and remove them.</p>
+
+        <p>But there has to be a better way, right?</p>
+      </section>
+
+      <section>
+        <h2>What if you had used an external style sheet instead?</h2>
+
+        <p><code>&lt;link href="css/style.css" rel="stylesheet" /&gt;</code></p>
+
+        <p>We can fix the problem with four lines of code.</p>
+
+        <pre><code>p {<br/>&nbsp;&nbsp;font-family: "Arial", sans-serif;<br/>&nbsp;&nbsp;color: black;<br/>}</code></pre>
+
+        <p>You, now: <kbd>:-)</kbd></p>
+      </section>
+
+    </main>
+  </body>
+</html>
